@@ -8,6 +8,7 @@ user_input = ""
 user_input = initial_input
 
 #  this is the initial way I did it before seeing the notes...
+
 # print("Removing capital letters...")
 # user_input = user_input.lower()
 # print("Removing spaces...")
@@ -30,3 +31,13 @@ if user_input == user_input[::-1]:
 else:
     print(initial_input, "is not a palindrome.")
 
+# alternate way? not sure if needed to define a function or not
+
+# # determine if string is a palindrome
+# def palindrome(initial_input):
+#     if user_input == user_input[::-1]:
+#         print(initial_input, "is a palindrome.")
+#     else:
+#         print(initial_input, "is not a palindrome.")
+# 
+# palindrome(initial_input)
