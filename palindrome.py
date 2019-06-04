@@ -6,15 +6,21 @@ initial_input = input("""Input some text. It can be a phrase, a sentence, or mul
 # remove capitals, spaces, and punctuation
 user_input = ""
 user_input = initial_input
-print("Removing capital letters...")
+
+#  this is the initial way I did it before seeing the notes...
+# print("Removing capital letters...")
+# user_input = user_input.lower()
+# print("Removing spaces...")
+# user_input = user_input.replace(" ", "")
+# print("Removing punctuation...")
+# user_input = user_input.replace(".", "")
+# user_input = user_input.replace(",", "")
+# user_input = user_input.replace("!", "")
+# user_input = user_input.replace(":", "")
+
+import re
+user_input = re.sub(r'[^A-Za-z]', "", user_input)
 user_input = user_input.lower()
-print("Removing spaces...")
-user_input = user_input.replace(" ", "")
-print("Removing punctuation...")
-user_input = user_input.replace(".", "")
-user_input = user_input.replace(",", "")
-user_input = user_input.replace("!", "")
-user_input = user_input.replace(":", "")
 
 print("Determining if your input is a palindrome...")
 

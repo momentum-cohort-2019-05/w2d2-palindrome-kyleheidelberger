@@ -14,8 +14,10 @@ user_input = user_input.lower()
 print("Determining if your input is a palindrome...")
 
 # determine if string is a palindrome
-if user_input == user_input[::-1]:
-    print(initial_input, "is a palindrome.")
-else:
-    print(initial_input, "is not a palindrome.")
+def palindrome(initial_input):
+    if user_input == user_input[::-1]:
+        print(initial_input, "is a palindrome.")
+    else:
+        print(initial_input, "is not a palindrome.")
 
+palindrome(initial_input)
