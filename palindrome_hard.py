@@ -1,5 +1,3 @@
-# to determine if same forwards and backwards, iterate through it recursively or using loop
-
 # get input from user
 initial_input = input("""Input some text. It can be a phrase, a sentence, or multiple sentences. """)
 
